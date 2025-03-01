@@ -6,4 +6,6 @@ document.getElementById('btn-update-title')
     const pageTitleElement = document.getElementById('page-title');
     console.log(pageTitleElement);
     pageTitleElement.innerText = "updated page title text "
+
+    // polash
 }) 
