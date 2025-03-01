@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEvenListener</title>
+</head>
+<body>
+    
+<button>
+    make green
+</button>
+ <!-- option 1  -->
+ <button onclick="console.log('i am clicked')">
+    third button
+ </button>
+ <!-- option 2  -->
+  <button onclick="makeYellow()">
+    make yellow
+  </button>
+<script>
+  function makeYellow(){
+    document.body.style.backgroundColor='yellow';
+}
+    document.getElementById('btn-make-green').addEventListener
+    ('click', function makeGreen(){
+        document.body.style.backgroundColor='green';
+    })
+</script>
+<script src="js/events.js"></script>
+</body>
+</html>
