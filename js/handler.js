@@ -5,5 +5,5 @@ document.getElementById('btn-update-title')
     // console.log('button clicked')
     const pageTitleElement = document.getElementById('page-title');
     console.log(pageTitleElement);
-    pageTitleElement.innerText = "updated page title text ";
+    pageTitleElement.innerText = "updated page title text "
 }) 
