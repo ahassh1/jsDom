@@ -7,11 +7,16 @@
 </head>
 <body>
     <button id="btn-mouse">Micly mouse minnile</button>
-
+   <input id="user-name" placeholder="write your name" type="text">
     <script>
         document.getElementById('btn-mouse')
         .addEventListener('mouseenter', function(){
             console.log('event triggered')
+        })
+
+        document.getElementById('user-name')
+        .addEventListener('focus', function(){
+            console.log('about to write')
         })
     </script>
 </body>
