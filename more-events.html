@@ -8,6 +8,7 @@
 <body>
     <button id="btn-mouse">Micly mouse minnile</button>
    <input id="user-name" placeholder="write your name" type="text">
+   <input id="user-email" placeholder="write your email" type="text">
     <script>
         document.getElementById('btn-mouse')
         .addEventListener('mouseenter', function(){
@@ -17,6 +18,16 @@
         document.getElementById('user-name')
         .addEventListener('focus', function(){
             console.log('about to write')
+        })
+
+        document.getElementById('user-email')
+        .addEventListener('keydown', function(event){
+            console.log('typing email', event)
+        })
+
+        document.getElementById('user-email')
+        .addEventListener('keyup', function(event){
+            console.log('typing email', event.target.value)
         })
     </script>
 </body>
