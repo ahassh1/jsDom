@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom event summary </title>
+</head>
+<body>
+    <h1 id="head-item">
+        Dom event summary
+    </h1>
+    <input id="input-item"  type="text" placeholder="Your Name">
+    <button onclick= "addName()">Update Now</button>
+
+    <button id="btn-add-name"> Add Name 2</button>
+
+    <div id="name-container"></div>
+  <script>
+    function addName(){
+        // console.log('btn-clicked')
+        const nameInput = document.getElementById('input-item')
+        const newName = nameInput.value;
+        // console.log(newName)
+
+        // parent 
+        const nameContainer = document.getElementById('name-container');
+
+        // create p 
+        const p = document.createElement('p')
+        p.innerText = newName;
+
+        // append 
+        nameContainer.appendChild(p);
+        nameInput.value = ''
+    }
+
+    //add event listener 
+    document.getElementById('btn-add-name')
+    .addEventListener('click', function(){
+        
+    })
+  </script>
+</body>
+</html>
